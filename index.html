@@ -5,15 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Photography</title>
-  <link rel="stylesheet" href="/assets/main.css" />
+  <link rel="stylesheet" href="./others/css/main.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
   <header>
     <img src="/assets/img/Linas Thoemke-m2Wk6pGBbbh944aP.svg" alt="" />
+    <div class="nav__toggle" id="navToggle">
+      <i class="fa-solid fa-bars nav__burger"></i>
+      </div>
     <nav>
       <ul class="menu">
         <li>
@@ -30,29 +37,38 @@
         </li>
       </ul>
     </nav>
+
   </header>
 
+  <!-- landing start -->
   <section id="ld">
-    <container>
+  <container>
+    <div class="linas">
+
+    </div>
       <div class="ld_left">
         <div class="ld_image">
           <div class="ld_image1"><img src="./assets/img/Home_1-mjEDk3krBEINqzOl.avif" alt="" /></div>
           <div class="ld_image2"><img src="./assets/img/Home_2-m6L1x6xeZetk65zO.avif" alt="" /></div>
         </div>
-        <div class="linas"><h1>Linas</h1></div>
-        <div class="ld_footer">
-          <ul>
-            <li><a href="">FASHION PHOTOGRAPHY | AMSTERDAM</a></li> 
-            <li><a  href="">THOEMKE@LINAS.COM</a></li>
-          </ul>
+        <div class="ld_text">
+          <div class="linas"><h1>Linas</h1></div>
+          <div class="ld_footer">
+            <ul>
+              <li><a href="">FASHION PHOTOGRAPHY | AMSTERDAM</a></li> 
+              <li><a  href="">THOEMKE@LINAS.COM</a></li>
+            </ul>
+          </div>
         </div>
+      
       </div>
       <div class="ld_right">
         <img src="./assets/img/Home_3-YBgxMPMkXLHyZX5g.avif" alt="">
       </div>
-
-     </container>
+    </container>
   </section>
+<!-- landing end -->
+
   <!-- landing 1 start -->
   <section id="ld1">
     <container>
@@ -231,7 +247,9 @@
     </ul>
   </nav>
 </footer>
+
 <!-- footer end -->
+ <script src="./others/script.js"></script>
 </body>
 
 </html>
