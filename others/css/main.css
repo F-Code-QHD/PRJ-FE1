@@ -71,7 +71,12 @@ nav .menu a:focus {
   height: 201px;
   width: 194px;
 }
-#ld .ld_left .linas h1 {
+.ld_text--respo {
+  display: none;
+}
+
+
+#ld .ld_left .ld_text .linas h1 {
   margin: 100px 0 0 0;
   color: #fff;
   font-size: 240px;
@@ -154,6 +159,16 @@ nav .menu a:focus {
   font-size: 14px;
   font-family: Rubik, sans-serif;
 }
+#ld1 .ld1_text1--respo{
+  display: none;
+}
+#ld1 .ld1_image--respo{
+  display: none;
+}
+#ld1 .ld1_content--respo{
+  display: none;
+}
+
 
 /* landing2 */
 #ld2 container {
@@ -223,6 +238,16 @@ nav .menu a:focus {
   top: -80px;
   left: 350px;
 }
+.ld2_text--respo{
+  display: none;
+}
+.ld2_image--respo{
+  display: none;
+}
+.ld2_content--respo{
+  display: none;
+}
+
 
 /* landing3 */
 #ld3 container {
@@ -463,7 +488,9 @@ nav .footer_icon i {
   color: #fff;
 }
 
-@media (max-width: 730px) {
+/* RESPONSIVE */
+@media (max-width: 920px) {
+/* RESPONSIVE HEADER START */
   .menu {
     display: none;
     flex-direction: column;
@@ -518,5 +545,214 @@ nav .footer_icon i {
   nav .menu a:hover {
     border-bottom: none;
   }
+/* RESPONSIVE HEADER END */
+
+  
+  /* LANDING START */
+#ld container{
+  position: relative;
+  display: flex  !important;
+  align-items: center ;
+  flex-direction: column;
+  top: 80px;
+  padding: 130px 0 50px 0 ;
+  width: 100%;
+  height: 100%;
+
+}
+.ld_text {
+    display: none;
+  }
+  .ld_text--respo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 50px 0 0 0; */
+  }
+  .ld_text--respo .linas--respo h1{
+    color: #fff;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.2px;
+    letter-spacing: -0.06em;
+  }
+  .ld_text--respo .ld_footer--respo {
+     padding: 70px 0 0 0;
+  }
+  .ld_footer--respo a{
+    color: #fff;
+  }
+  #ld .ld_left .ld_image {
+    margin: 50px 0 0 0;
+  }
+  #ld .ld_right img {
+    margin: 7px 0 0px 15px;
+    width: 328px;
+    height: 417px;
+}
+
+/* LANDING END */
+
+/* LANDING 1 START */
+.ld1_left {
+  display: none;
+}
+.ld1_right{
+  display: none;
+}
+.ld1_right .ld1_link{
+  display: none;
+}
+#ld1 .ld1_text1--respo{
+  display: block;
+}
+#ld1 .ld1_image--respo{
+  display: block;
+}
+#ld1 .ld1_content--respo{
+  display: block;
+}
+#ld1 container{
+  position: relative;
+  display: flex  !important;
+  align-items: center ;
+  flex-direction: column;
+  padding: 100px 0 50px 0 ;
+}
+.ld1_text1--respo{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 100px 50px 0;
+}
+.ld1_text1--respo h1{
+  font-size: 50px;
+}
+.ld1_text1--respo a{
+  text-decoration: underline;
+  color: black;
+  font-family: Rubik, sans-serif;
+}
+.ld1_image--respo .ld1_image1--respo img{
+  width: 328px;
+  height: 447px;
+}
+.ld1_image--respo .ld1_image2--respo img{
+  width: 257px;
+  height: 371px;
+  margin-top: 10px;
+} 
+.ld1_content--respo p{
+  margin: 0px 170px 0 0;
+  padding: 8px 0 0 0;
+  font-weight: 450;
+  font-family: Rubik, sans-serif;
+  font-size: 14px;
+  color: #010f1a;
+}
+/* LANDING 1 END */
+
+
+/* LANDING 2 START */
+.ld2_left{
+  display: none;
+}
+.ld2_right{
+  display: none;
+}
+.ld2_text--respo{
+  display: block;
+}
+.ld2_image--respo{
+  display: block;
+}
+.ld2_content--respo{
+  display: block;
+}
+#ld2 container{
+  display: flex  !important;
+  align-items: center ;
+  flex-direction: column !important; 
+  padding: 100px 0 50px 0 ;
+}
+
+.ld2_text--respo{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 100px 50px 0;
+}
+.ld2_text--respo h1{
+  font-size: 50px;
+  color: #fff;
+  margin: 0 170px 0 0 ;
+}
+.ld2_text--respo h3{
+  color: #fff;
+  font-size: 18px;
+  margin: 0 95px 0 0 
+}
+.ld2_text--respo a{
+  text-decoration: underline;
+  color: #fff;
+  font-family: Rubik, sans-serif;
+  
+}
+
+.ld2_image--respo{
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.ld2_image--respo .ld2_image1--respo img{
+  width: 328px;
+  height: 625px;
+}
+.ld2_image--respo .ld2_image2--respo img{
+  width: 235px;
+  height: 245px;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+.ld2_image--respo .ld2_image3--respo img{
+  width: 263px;
+  height: 371px;
+  margin-right: 100px;
+  margin-top: 10px;
+}
+.ld2_content--respo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.ld2_content--respo p{
+  color: #fff;
+  font-family: Rubik, sans-serif;
+}
+/* LANDING 2 END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+  
 }
 
