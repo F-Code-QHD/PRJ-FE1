@@ -1,1 +1,224 @@
+* {
+    padding: 20;
+    margin: 0;
+    background-color: rgb(1, 15, 26);
+    color: #fff;
+    font-family: "Space Grotesk", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+}
 
+header {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    /* background-color: rgb(1, 15, 26); */
+    padding: 24px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    width: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+nav .menu li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav .menu a {
+    color: #fff;
+    padding-bottom: 2px;
+}
+
+nav .menu a:hover,
+nav .menu a:focus {
+    border-bottom: 1.5px solid #fff;
+}
+
+header img {
+    width: 178px;
+    height: 19px;
+}
+
+footer {
+    margin-left: 10%;
+    margin-right: 10%;
+    position: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(1, 15, 26);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: auto;
+    margin: auto;
+}
+
+.left-section a,
+.right-section a {
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.first-page {
+    display: flex;
+    margin-top: 0;
+    height: 100vh;
+    gap: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.half-left img {
+    width: 606px;
+    height: 747px;
+}
+
+.about-2 {
+    width: 194px;
+    height: 214px;
+}
+
+.about-3 {
+    width: 297px;
+    height: 214px;
+}
+
+
+.half-right strong {
+    font-size: 6rem;
+    font-weight: 900;
+    align-items: center;
+}
+
+.second-page {
+    display: flex;
+    background-color: white;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    min-height: 100vh;
+}
+
+.introduction {
+    flex: 1;
+    padding-right: 5%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.exhibition {
+    flex: 1;
+    padding-left: 5%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.introduction p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    background-color: white;
+    color: black;
+}
+
+.introduction a {
+    font-size: 24px;
+    font-weight: 500;
+    background-color: white;
+    color: black;
+    border-bottom: solid 1px black;
+}
+
+.exhibition h3 {
+    font-size: 24px;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.exhibition p {
+    font-size: 16px;
+    font-weight: 200;
+    display: flex;
+    background-color: white;
+    color: black;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.exhibition span {
+    background-color: white;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.third-page {
+    background-image: url('/assets/img/about-4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    color: white; /* Giả sử văn bản màu trắng để dễ đọc trên hình nền */
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.heading {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.heading h3 {
+    background-color: inherit;
+    color: black;
+    font-weight: 300; 
+    font-size: 1.2em;
+    opacity: 0.8; 
+}
+
+.third-page h1 {
+    position: flex;
+    font-size: 8em;
+    text-align: center;
+    background-color: transparent;
+}
+
+.third-page a {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    transition: all 0.3s ease;
+}
+
+.third-page a:hover {
+    background-color: white;
+    color: black;
+}
