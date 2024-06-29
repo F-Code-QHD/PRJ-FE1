@@ -9,6 +9,10 @@
   outline: none;
 }
 
+html {
+  background-color: rgb(1, 15, 26);
+}
+
 header {
   position: fixed;
   top: 0px;
@@ -20,17 +24,19 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 nav .menu li {
   display: inline-block;
-  margin-left: 40px;
+  
 }
 
 nav .menu a {
   color: #fff;
   padding-bottom: 2px;
-
 }
 
 header img {
@@ -47,12 +53,12 @@ nav .menu a:focus {
 }
 
 #landing {
-  padding: 0 16px;
+  /* padding: 0 16px; */
   width: 100%;
   height: 1000px;
   background-color: rgb(1, 15, 26);
-  /* display:flex; */
-  /* justify-content: space-between ; */
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #landing container {
