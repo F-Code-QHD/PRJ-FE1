@@ -18,6 +18,19 @@ html {
 body{
   overflow: hidden;
 }
+/* scrolling animation start */
+.reveal {
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+/* scrolling animation end */
 
 header {
   position: fixed;
@@ -254,7 +267,7 @@ nav .menu a:focus {
 
 /* landing3 */
 #ld3 container {
-  margin: 50px 100px 0 0px;
+  margin: 78px 100px 50px 0px;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -270,7 +283,15 @@ nav .menu a:focus {
   font-size: 100px;
   margin: 50px 0 0 50px;
 }
+.ld3_right{
+  display: flex;
+  flex-direction: column;
+
+}
 #ld3 .ld3_right .ld3_image {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   margin: 50px 0 0 115px;
 }
 .ld3_right .ld3_image .ld3_image1 img {
@@ -286,6 +307,7 @@ nav .menu a:focus {
   color: #000;
   font-size: 14px;
   font-family: Rubik, sans-serif;
+  margin: 0 20px 0 0 ;
 }
 .ld3_right .ld3_link h3 {
   font-size: 18px;
@@ -297,8 +319,10 @@ nav .menu a:focus {
   font-family: Rubik, sans-serif;
 }
 .ld3_right .ld3_link {
-  text-align: right;
-  margin: 75px 0 0 0;
+  text-align: left;
+   position: relative;
+   margin: 50px 0 0 0;
+   left: 110px;
 }
 
 #ld3--respo{
@@ -579,8 +603,9 @@ nav .footer_icon i {
   display: flex  !important;
   align-items: center ;
   flex-direction: column;
-  top: 80px;
-  padding: 130px 0 50px 0 ;
+  top:80px;
+  /* margin: 100px 0 0 0 ; */
+  padding: 100px 0 50px 0 !important;
   width: 100%;
   height: 100%;
 
@@ -609,6 +634,11 @@ nav .footer_icon i {
   }
   #ld .ld_left .ld_image {
     margin: 50px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: nowrap;
   }
   #ld .ld_left .ld_image .ld_image1  img{
     width: 152px;
@@ -652,7 +682,7 @@ nav .footer_icon i {
   display: flex  !important;
   align-items: center ;
   flex-direction: column;
-  padding: 100px 0 50px 0 ;
+  padding: 100px 0 50px 0 !important;
 }
 .ld1_text1--respo{
   display: flex;
@@ -699,7 +729,7 @@ nav .footer_icon i {
   display: flex  !important;
   align-items: center ;
   flex-direction: column !important; 
-  padding: 70px 0 50px 0 ;
+  padding: 70px 0 50px 0 !important;
 }
 .ld2_text--respo{
   display: flex;
@@ -769,7 +799,7 @@ nav .footer_icon i {
   align-items: center  !important;
   flex-direction: column !important; 
   /* padding: 70px 0 50px 0 ; */
-  margin:50px 10px 0 0 ;
+  margin: 50px 40px 45px 50px ;
 }
 #ld3--respo{
   display: flex  !important;
@@ -820,7 +850,7 @@ nav .footer_icon i {
   display: flex  !important;
   align-items: center ;
   flex-direction: column !important; 
-  padding: 100px 0 50px 0 ;
+  padding: 100px 0 50px 0 !important ;
 }
 .ld4_text--respo{
   display: flex;
@@ -879,7 +909,7 @@ nav .footer_icon i {
   display: flex;
   align-items: center;
   flex-direction: column !important;
-  /* padding: 0 300px 0 300px; */
+  padding: 0 0px 0 0px !important;
 }
 .Impressed_text--respo{
   display: flex;
@@ -915,17 +945,69 @@ nav .footer_icon i {
 
 }
 
-@media (max-width: 1234px) {
-/* LANDING START */
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 2480px) {
+#ld container {
+  padding: 0px 600px 0 600px;
+  display: flex  !important;
+  justify-content: center;
+}
+#ld1 container{
+  padding: 0px 600px 0 600px;
+  display: flex  !important;
+  justify-content: space-around;
+}
+#ld2 container {
+  padding: 0px 600px 0 600px;
+  display: flex  !important;
+  justify-content: space-between;
+}
+#ld3 container{
+  padding: 0px 600px 0 600px;
+  display: flex  !important;
+  justify-content: space-between;
+}
+#ld4 container{
+  padding: 0px 600px 0 600px;
+  display: flex  !important;
+  justify-content: space-between;
+}
+#Impressed container{
+  padding: 0px 600px 0 600px;
+  display: flex  !important;
+  justify-content: space-between;
+}
 }
 
+@media (max-width: 1916px){
+  #ld container {
+    padding: 0px 300px 0 300px;
+    display: flex  !important;
+    justify-content: center;
+  }
+  #ld1 container{
+    padding: 0px 300px 0 300px;
+    display: flex  !important;
+    justify-content: space-around;
+  }
+  #ld2 container {
+    padding: 0px 300px 0 300px;
+    display: flex  !important;
+    justify-content: space-between;
+  }
+  #ld3 container{
+    padding: 0px 300px 0 300px;
+    display: flex  !important;
+    justify-content: space-between;
+  }
+  #ld4 container{
+    padding: 0px 300px 0 300px;
+    display: flex  !important;
+    justify-content: space-between;
+  }
+  #Impressed container{
+    padding: 0px 300px 0 300px;
+    display: flex  !important;
+    justify-content: space-between;
+  }
+
+}
