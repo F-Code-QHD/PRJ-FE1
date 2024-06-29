@@ -15,6 +15,9 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
 }
+body{
+  overflow: hidden;
+}
 
 header {
   position: fixed;
@@ -297,21 +300,7 @@ nav .menu a:focus {
   text-align: right;
   margin: 75px 0 0 0;
 }
-/* .ld3_text--respo{
-  display: none;
-} 
-.ld3_image--respo{
-  display: none;
-}
-#ld3 .ld3_content--respo{
-  display: none;
-}
- #ld3 .ld3_image1--respo{
-  display: none;
- }  */
-  /* #ld3_resposive{
-    display: none;
-   } */
+
 #ld3--respo{
   display: none;
 }   
@@ -399,7 +388,7 @@ nav .menu a:focus {
 /* Impressed */
 #Impressed container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between !important; 
   margin: 100px 30px 150px 15px;
 }
 .Impressed_left h1 {
@@ -416,7 +405,7 @@ nav .menu a:focus {
 }
 .Impressed_left .Impressed_image {
   display: flex;
-  justify-content: center;
+  justify-content: center !important;
   gap: 12px;
   margin: 150px 0 0 0;
 }
@@ -448,7 +437,7 @@ nav .menu a:focus {
 .lastname #lastname {
   outline: 0cm;
   height: 48px;
-  width: 503px;
+  width: 250%;
   background-color: #f1f1f1;
   padding: 16px;
 }
@@ -486,6 +475,14 @@ nav .menu a:focus {
   padding: 16px;
   text-align: center;
 }
+.Impressed_image--respo{
+  display: none;
+}
+.Impressed_text--respo{
+  display: none;
+}
+
+
 
 /* footer */
 footer {
@@ -593,7 +590,7 @@ nav .footer_icon i {
   }
   .ld_text--respo {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     /* padding: 50px 0 0 0; */
   }
@@ -613,6 +610,16 @@ nav .footer_icon i {
   #ld .ld_left .ld_image {
     margin: 50px 0 0 0;
   }
+  #ld .ld_left .ld_image .ld_image1  img{
+    width: 152px;
+    height: 150px;
+  }
+  #ld .ld_left .ld_image .ld_image2 img{
+    width: 152px;
+    height: 150px;
+  }
+  
+
   #ld .ld_right img {
     margin: 7px 0 0px 15px;
     width: 328px;
@@ -682,28 +689,18 @@ nav .footer_icon i {
 
 
 /* LANDING 2 START */
-.ld2_left{
+.ld2_left,.ld2_right{
   display: none;
 }
-.ld2_right{
-  display: none;
-}
-.ld2_text--respo{
-  display: block;
-}
-.ld2_image--respo{
-  display: block;
-}
-.ld2_content--respo{
+.ld2_text--respo,.ld2_image--respo, .ld2_content--respo {
   display: block;
 }
 #ld2 container{
   display: flex  !important;
   align-items: center ;
   flex-direction: column !important; 
-  padding: 100px 0 50px 0 ;
+  padding: 70px 0 50px 0 ;
 }
-
 .ld2_text--respo{
   display: flex;
   align-items: center;
@@ -761,10 +758,7 @@ nav .footer_icon i {
 /* LANDING 2 END */
 
 /* LANDING 3 START */
-.ld3_left{
-  display: none;
-}
-.ld3_right{
+.ld3_left, .ld3_right{
   display: none;
 }
 #ld3--respo{
@@ -772,9 +766,10 @@ nav .footer_icon i {
 }
 #ld3 container{
   display: flex  !important;
-  align-items: center ;
+  align-items: center  !important;
   flex-direction: column !important; 
-  /* padding: 100px 0 50px 0 ; */
+  /* padding: 70px 0 50px 0 ; */
+  margin:50px 10px 0 0 ;
 }
 #ld3--respo{
   display: flex  !important;
@@ -814,21 +809,13 @@ nav .footer_icon i {
 /* LANDING 3 END */
 
 /* LANDING 4 START */
-.ld4_text--respo{
+.ld4_text--respo,.ld4_image--respo, .ld4_content--respo {
   display: block;
 }
-.ld4_image--respo{
-  display: block;
-}
-.ld4_content--respo{
-  display: block;
-}
-.ld4_left{
+.ld4_left, .ld4_right {
   display: none;
 }
-.ld4_right{
-  display:none;
-}
+
 #ld4 container{
   display: flex  !important;
   align-items: center ;
@@ -881,6 +868,55 @@ nav .footer_icon i {
 }
 /* LANDING 4 END */
 
+/* IMPRESSED START*/
+.Impressed_left .Impressed_image, .Impressed_left .Impressed_text, .Impressed_left h1{
+  display: none;
+}
+.Impressed_text--respo{
+  display: block;
+}
+#Impressed container{
+  display: flex;
+  align-items: center;
+  flex-direction: column !important;
+  /* padding: 0 300px 0 300px; */
+}
+.Impressed_text--respo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 50px;
+  padding-right: 100px;
+  gap:20px;
+}
+.Impressed_text--respo h1{
+  font-size: 30px;
+}
+.Impressed_text--respo p{
+  font-family: Rubik, sans-serif;
+  font-weight: 430;
+}
+#name,#lastname, #email, #message{
+  width: 328px !important;
+}
+
+.Impressed_image--respo{
+  display: flex;
+  justify-content:center;
+  gap:10px;
+  padding-top:50px ;
+}
+.Impressed_image--respo img{
+  width: 152px;
+  height: 150px;
+  }
+
+
+
+}
+
+@media (max-width: 1234px) {
+/* LANDING START */
 
 
 
@@ -891,26 +927,5 @@ nav .footer_icon i {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-  
 }
 
